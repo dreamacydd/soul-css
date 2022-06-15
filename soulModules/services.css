@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/*
+    We Clean It stylesheet : services page module
+
+    Copyright © 2022 Dreamacy Digital Development.
+
+    All rights reserved.
+*/
+
+.service {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.biasLeft {
+    flex-direction: row;
+}
+
+.biasLeft img {
+    margin-right: 2rem;
+}
+
+.biasRight {
+    flex-direction: row-reverse;
+}
+
+.biasRight img {
+    margin-left: 2rem;
+}
+
+.service .serviceImage {
+    width: 300px;
+    height: 300px;
+    aspect-ratio: 1/1;
+}
+
+.serviceBlurb p {
+    text-indent: 1rem;
+}
+
+.serviceBlurb h1,
+.serviceBlurb h2 {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 640px) {
+    .biasLeft img, .biasRight img {
+        margin: 0 auto;
+    }
+
+    .service .serviceImage {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 16 / 9;
+    }
+
+    .service .serviceImage.biasBottom {
+        object-position: 50% 85%;
+    }
+
+    .service .serviceImage.biasMiddle {
+        object-position: 50% 50%;
+    }
+
+    .service .serviceImage.biasTop {
+        object-position: 0% 15%;
+    }
+
+    .biasLeft, .biasRight {
+        flex-direction: column;
+    }
+
+    .serviceBlurb p {
+        text-indent: initial;
+    }
+}

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*
+    We Clean It 2022 stylesheet : footer layout module.
+
+    Copyright © 2022 Dreamacy Digital Development.
+
+    All rights reserved.
+ */
+
+#siteFooter {
+  margin-top: auto;
+  box-sizing: border-box;
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 3px solid var(--orange);
+}
+
+@media screen and (max-width: 640px) {
+  #siteFooter {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 2rem;
+  }
+}
+
+#siteFooter ul li {
+  margin-right: 0;
+}
+
+#siteFooter .meta p {
+  margin: 0;
+}

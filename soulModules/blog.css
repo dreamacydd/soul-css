@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*
+    We Clean It 2022 stylesheet : blog module.
+
+    Copyright © 2022 Dreamacy Digital Development.
+
+    All rights reserved.
+ */
+
+.postMeta {
+    font-size: 90%;
+    color: var(--grey);
+    font-style: italic;
+}
+
+#blogHero {
+    height: 18rem;
+}
+
+#blogHero .jumbotron {
+    height: 18rem;
+}

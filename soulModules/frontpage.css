@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+/*
+    We Clean It 2022 stylesheet : front page module.
+
+    Copyright © 2022 Dreamacy Digital Development.
+
+    All rights reserved.
+ */
+
+.hero {
+    background-size: cover;
+    background-position-y: 85%;
+    height: var(--hero-height);
+    box-sizing: content-box;
+    margin-bottom: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 15;
+    color: var(--foreground-dark);
+}
+
+.hero.kcdpsFrontPage {
+    background-image: url("/assets/wsfront_kcdps_2020.jpeg");
+    background-position-x: 100%;
+}
+
+.hero.kcdpsContactPage {
+    background-image: url("/assets/contactfront_kcdps_2020.jpeg");
+    background-position-x: 33%;
+}
+
+.hero.kcdpsServicesPage {
+    background-image: url("/assets/servicesfront_kcdps_2022.jpeg");
+    background-position-x: 100%;
+}
+
+.hero.kcdpsPhotoPage {
+    background-image: url("/assets/photogalleryfront_kcdps_2020.jpeg");
+}
+
+.hero.kcdpsBlogPage {
+    background-image: url("/assets/blogfront_cc2_2022.jpeg");
+    background-position-x: 0;
+}
+
+.jumbotron {
+    height: var(--hero-height);
+    box-sizing: border-box;
+    background-color:rgba(44, 43, 46, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5rem;
+}
+
+.jumbotron p,
+.jumbotron h1,
+.jumbotron a {
+    text-align: center;
+    transform: scale(1.1);
+}
+
+#ctaButton {
+    color: var(--foreground-light);
+    background-color: var(--orange);
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 0.3333rem;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: none;
+    position: relative;
+    top: 0;
+    transition: box-shadow ease 250ms, top ease 250ms;
+}
+
+#ctaButton:link,
+#ctaButton:visited,
+#ctaButton:hover,
+.smallCtaButton:link,
+.smallCtaButton:visited,
+.smallCtaButton:hover {
+    color: var(--foreground-light);
+    border: none;
+}
+
+#ctaButton:hover {
+    top: -0.25rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+    transition: box-shadow ease 250ms, top ease 250ms;
+}
+
+a.smallCtaButton {
+    color: var(--foreground-dark);
+    background-color: var(--orange);
+    border: none;
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: none;
+    text-shadow: none;
+    display: block;
+    transition: box-shadow ease 250ms;
+}
+
+a.smallCtaButton:hover {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.7);
+    transition: box-shadow ease 250ms;
+}
+
+a.smallCtaButton:link,
+a.smallCtaButton:visited,
+a.smallCtaButton:hover {
+    border: none;
+    padding: 0.75rem;
+    transition: box-shadow ease 250ms;
+}
+
+.hero .credit {
+    margin: -2rem 0 0 0;
+    padding: 0 0 0 0.5rem;
+    background-color: var(--foreground-dark);
+    color: var(--foreground-light);
+    opacity: 0.5;
+    height: 2rem;
+    font-size: 75%;
+    font-style: italic;
+}
+
+.widgetRow {
+    display: grid;
+    margin: 0 min(5%, 10rem);
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+
+.widget {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.widget h2 {
+    text-align: left;
+}
+
+.fullWidthRow {
+    margin: 0 10rem;
+}
+
+@media only screen and (max-width: 640px) {
+    .jumbotron {
+        padding: 1.5rem;
+    }
+
+    .widgetRow {
+        grid-template-columns: 1fr;
+    }
+
+    .widgetRow {
+        margin: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {    
+    .fullWidthRow {
+        margin: 1.5rem;
+    }
+}

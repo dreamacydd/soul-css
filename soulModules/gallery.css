@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/*
+    We Clean It 2022 stylesheet : photo gallery module.
+
+    Copyright © 2022 Dreamacy Digital Development.
+
+    All rights reserved.
+ */
+
+@media only screen and (max-width: 640px) {
+    .workGallery figure {
+        margin: 0.5rem 0;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    .workGallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 0.5rem;
+    }
+
+    .workGallery figure {
+        margin: 0 0.5rem;
+    }
+
+    .workGallery figure:first-child {
+        margin-block-start: 0;
+        margin-inline-start: 0;
+    }
+
+    .workGallery figure:last-child {
+        margin-block-end: 0;
+        margin-inline-end: 0;
+    }
+}
+
+.photoGalleryPhoto {
+    aspect-ratio: 14 / 9;
+    height: auto;
+    width: auto;
+    background-size: cover;
+    position: relative;
+}
+
+.photoMeta {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 0.5rem;
+    color: var(--orange);
+    box-sizing: border-box;
+    background: rgb(30, 30, 30);
+    opacity: 0.5;
+}
+
+.photoGalleryPhoto.imageAlpha {
+    background-image: url("/photos/wh-tile-before-1.jpg");
+    background-position-y: 50%;
+}
+
+.photoGalleryPhoto.imageBeta {
+    background-image: url("/photos/wh-tile-after-1.jpg");
+}
+
+.photoGalleryPhoto.imageGamma {
+    background-image: url("/photos/wh-tile-door-before.jpg");
+    background-position-y: 75%;
+}
+
+.photoGalleryPhoto.imageDelta {
+    background-image: url("/photos/wh-tile-door-after.jpg");
+}
+
+.photoGalleryPhoto.imageEpsilon {
+    background-image: url("/photos/store-vct-before.jpg");
+    background-position-y: 100%;
+}
+
+.photoGalleryPhoto.imageZeta {
+    background-image: url("/photos/store-vct-after.jpg");
+    background-position-y: 100%;
+}
+
+.photoGalleryPhoto.imageEta {
+    background-image: url("/photos/store-vct-before-2.jpg");
+    background-position-y: 25%;
+}
+
+.photoGalleryPhoto.imageTheta {
+    background-image: url("/photos/store-vct-after-2.jpg");
+    background-position-y: 25%;
+}
+
+.photoGalleryPhoto.imageIota {
+    background-image: url("/photos/urinal-vct-before.jpg");
+    background-position-y: 50%;
+}
+
+.photoGalleryPhoto.imageKappa {
+    background-image: url("/photos/urinal-vct-after.jpg");
+    background-position-y: 50%;
+}
