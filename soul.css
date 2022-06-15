@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/*
+    soul.css framework : entry point.
+
+    Copyright © 2022 Dreamacy Digital Development.
+    
+    MIT License.
+ */
+
+@import "soulModules/type.css";
+@import "soulModules/layout.css";
+@import "soulModules/header.css";
+@import "soulModules/footer.css";
+@import "soulModules/frontpage.css";
+@import "soulModules/contactForm.css";
+@import "soulModules/services.css";
+@import "soulModules/blog.css";
+@import "soulModules/gallery.css";
+
+html {
+  --background-light: rgba(250, 246, 254, 0.9);
+  --background-dark: rgba(44, 43, 46, 0.9);
+  --background-black: #0c0b0e;
+  --foreground-light: #2c2b2e;
+  --foreground-dark: #faf6fe;
+  --orange: #ffc800;
+  --darker-orange: #eea800;
+  --purple: #421a90;
+  --blue: #0076ec;
+  --red: #ec0025;
+  --grey: #7a767f;
+  --green: #69901a;
+  --hero-height: 25rem;
+
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: var(--background-light);
+  color: var(--foreground-light);
+}
+
+:root {
+  background-color: var(--background-light);
+  color: var(--foreground-light);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--darker-orange);
+  padding-bottom: 2px;
+  border-bottom: 1px dashed var(--darker-orange);
+  transition: color ease 250ms, padding-bottom ease 250ms, border-bottom ease 250ms;
+}
+
+a:visited {
+  color: var(--purple);
+  padding-bottom: 2px;
+  border-bottom: 1px dashed var(--purple);
+  transition: color ease 250ms, padding-bottom ease 250ms, border-bottom ease 250ms;
+}
+
+a:hover {
+  color: var(--red);
+  border-bottom: 1px solid var(--red);
+  padding-bottom: 0;
+  transition: color ease 250ms, padding-bottom ease 250ms, border-bottom ease 250ms;
+}
